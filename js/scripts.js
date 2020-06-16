@@ -20,4 +20,30 @@ Ticket.prototype.studentVeteranDiscount = function(studentVeteran, age) {
   }
 }
 
+Ticket.prototype.modifyTicket = function() {
+  this.studentVeteranDiscount();
+  this.ageDiscount();
+  this.matinee();
+}
+
+
 //user interface logic
+function gatherUserInput() {
+  const name = $('input#movie-name').val();
+  const age = parseInt($('input#age').val());
+  const timeOfDay = $('select#timeOfDay').val();
+  let studentVet;
+    if ($('input:checkbox[name=studentVetCheck]:checked').val()) {
+      studentVet = true;
+    } else {
+      studentVet = false;
+    }
+  return [name, age, timeOfDay, studentVet];
+}
+
+$(document).ready(function() {
+  $('form.ticket-info').submit(function(event) {
+    event.preventDefault();
+    dataArray = gatherUserInput();
+  })
+})
