@@ -55,6 +55,10 @@ Purchase movie tickets easily online!
 * Input: 'Student'
 * Output: {Name Star Wars, Price: 12}
 
+#### Behavior: Program gathers inputs and applies the rules as appropriate
+* Input: 'Matinee 15 Student'
+* Output: {Name Star Wars, Price: 8}
+
 ## Known Bugs
 
 #### Not Yet Resolved

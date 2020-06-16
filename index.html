@@ -10,6 +10,37 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="page-header">
+      <h1>Purchase Your Movie Ticket!</h1>
+    </div>
+    <form class="ticket-info">
+      <div class="form-group">
+        <label for="movie-name">What movie would you like to see?</label>
+        <input type="text" id="movie-name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="age">Enter your age</label>
+        <input type="number" id="age" class="form-control">
+      </div>
+      <label for="timeOfDay">What Time?</label>
+      <select name="timeOfDay" id="timeOfDay">
+        <option value="matinee">Matinee</option>
+        <option value="evening">Evening Show</option>
+      </select>
+      <div class="checkbox">
+        <label><input type="checkbox" value="student" name="studentVetCheck">Student</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" value="veteran" name="studentVetCheck">Veteran</label>
+      </div>
+      <button class="btn" type="submit">Get Ticket!</button>
+    </form>
+
+
+    <div id="show-ticket" class="well">
+      <p>Your ticket to <span class="movie-name"></span> will cost <span class="movie-price"></span>.</p>
+    </div>
+  </div>
 </body>
 </html>

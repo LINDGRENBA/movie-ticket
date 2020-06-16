@@ -19,3 +19,5 @@ Ticket.prototype.studentVeteranDiscount = function(studentVeteran, age) {
     this.price -= 2;
   }
 }
+
+//user interface logic
