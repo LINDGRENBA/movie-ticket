@@ -51,6 +51,10 @@ Purchase movie tickets easily online!
 * Input: Age = 9
 * Output: {Name Star Wars, Price: 10}
 
+#### Behavior: Program reduces default price if user is a Student or Veteran, unless the age discount applies
+* Input: 'Student'
+* Output: {Name Star Wars, Price: 12}
+
 ## Known Bugs
 
 #### Not Yet Resolved
