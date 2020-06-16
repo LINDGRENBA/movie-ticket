@@ -35,13 +35,21 @@ Purchase movie tickets easily online!
 
 ## Specifications
 
-#### Behavior: 
-* Input: 
-* Output:
+#### Behavior: Program creates a Ticket object with a default price when the user submits
+* Input: User clicks submit
+* Output: {Price: 13}
 
-#### Behavior: 
-* Input: 
-* Output:
+#### Behavior: Program attaches movie name to the Ticket object
+* Input: Name= "Star Wars"
+* Output: {Name: Star Wars, Price: 13}
+
+#### Behavior: Program reduces default price if user selects 'Matinee'
+* Input: 'Matinee'
+* Output: {Name Star Wars, Price: 10}
+
+#### Behavior: Program reduces default price if user is a Youth or Senior
+* Input: Age = 9
+* Output: {Name Star Wars, Price: 10}
 
 ## Known Bugs
 
